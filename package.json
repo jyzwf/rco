@@ -1,0 +1,32 @@
+{
+	"name": "rco",
+	"version": "1.0.0",
+	"main": "dist/rco.js",
+	"module": "dist/rco.esm.js",
+	"description": "generator async control flow goodness like co.js",
+	"author": "echo",
+	"license": "MIT",
+	"scripts": {
+		"dev": "rollup -cw --environment NODE_ENV:development",
+		"build": "rollup -c --environment NODE_ENV:production",
+		"test": "cross-env NODE_ENV=test mocha --require @babel/register"
+	},
+	"homepage": "https://github.com/jyzwf/rco",
+	"devDependencies": {
+		"@babel/cli": "^7.6.2",
+		"@babel/core": "^7.6.2",
+		"@babel/plugin-transform-runtime": "^7.6.2",
+		"@babel/preset-env": "^7.6.2",
+		"@babel/register": "^7.6.2",
+		"@babel/runtime": "^7.6.2",
+		"mocha": "^6.2.0",
+		"mz": "^2.7.0",
+		"rollup-plugin-babel": "^4.3.3",
+		"rollup-plugin-delete": "^1.1.0",
+		"rollup-plugin-terser": "^5.1.2",
+		"rollup-plugin-uglify": "^6.0.3"
+	},
+	"dependencies": {
+		"cross-env": "^6.0.0"
+	}
+}
